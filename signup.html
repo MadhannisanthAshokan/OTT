@@ -3,11 +3,11 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Signup</title>
     <link rel="stylesheet" href="style.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
 </head>
 <body>
-
     <div class="sign-head">
         <div class="row1">
             <div class="signupbg" style="background-image: url(./assets/02/1@2x.png);"></div>
@@ -33,20 +33,69 @@
             <div class="signupbg row-3" style="background-image: url(./assets/02/Bitmap@2x.png);"></div>
 
         </div>
-       <form action="">
+       <form id="form">
            <h3>SignUp</h3>
            <p>Enter your  details to signup</p>
            <label for="name">Name</label>
            <input type="text" placeholder="Name" id="name">
+           <span id="err_name">
+            <img class="img" src="./OTTIcon/Alert.svg" alt="" class="img">Enter UserName </span>
            <label for="email">Email</label>
            <input type="text" placeholder="Email" id="email">
+           <span id="err_email" >
+            <img src="./OTTIcon/Alert.svg" alt="" class="img">Enter Valid Email </span>
            <label for="password">Password</label>
-           <input type="text" placeholder="passwod" id="password">
+           <input type="text" placeholder="password" id="password">
+           <span id="err_password" >
+            <img src="./OTTIcon/Alert.svg" alt="" class="img">Enter Password </span>
            <label for="city">City</label>
            <input type="text" placeholder="city" id="city">
-           <button class="signup">Signup</button>
+           <span id="err_city" class="err">
+            <img src="./OTTIcon/Alert.svg" alt="" class="img">Enter City </span>
+           <span id="msg" style="color: #A6AE00;"></span>
+           <button class="signup" >Signup</button>
        </form>
     </div>
-    
+    <footer class="footer">
+        <div class="bottom"> 
+                <nav class="bot">
+                    <div class="field">
+                        FAQ
+                    </div>
+                    <div class="field">
+                        <a href="">Terms of use</a>
+                    </div>
+                    <div class="field">
+                        <a href="">Privacy policy</a>
+                    </div>
+                </nav>
+                <nav class="col-2">
+                    <div class="field">
+                       Help center
+                    </div>
+                    <div class="field">
+                        <a href="" style="cursor: pointer;">Blog</a>
+                    </div>
+                    <div class="field">
+                        <a href="">Watch List</a>
+                    </nav>
+                    <nav class="col-3">
+                        <div class="field-1">
+                           Media center
+                        </div>
+                        <div class="field-1">
+                            <a href=""><img src="./OTTIcon/You Tube.png" alt=""></a>
+                            <a href=""><img src="./OTTIcon/Face book.png" alt=""></a>
+                            <a href=""><img src="./OTTIcon/Instagram.png" alt=""></a>
+                        </div>
+                        <div class="field-1">
+                           <a href=""><img src="./OTTIcon/App Store.png" alt=""></a>
+                           <a href=""><img src="./OTTIcon/Google play.png" alt=""></a>
+                        </div>
+                    </nav>
+        </div>
+        <p class="rights"><span style="color: #A6AE00;">Terms and Privacy NoticeSend us feedbackHelp<span>&#169;</span></span> 1996-2021, Watchify.com. Inc. or its affilites</p>
+            </footer>
+            <script src="script.js"></script>
 </body>
 </html>
